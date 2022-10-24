@@ -108,6 +108,10 @@ function search(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
+  //add active class from Celcisus
+  celsiusLink.classList.add("active");
+  //remove active to Farenheit
+  fahrenheitLink.classList.remove("active");
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
